@@ -1,75 +1,73 @@
-📌 QA Portfolio — Carmen Fletcher
+# 📌 QA Portfolio — *Carmen Fletcher*
 
-A showcase of professional QA Engineering skills, including API testing, UI automation, test design, SQL, and exploratory testing.
+A showcase of professional QA Engineering skills, including API testing, UI automation, test design, SQL, and exploratory testing.  
 
 This portfolio demonstrates hands-on projects and practical examples similar to real interview tasks and workplace responsibilities.
 
-🧪 Skills Overview
+---
 
-Core QA Skills
+## 🧪 Skills Overview
 
-Functional & regression testing
+### **Core QA Skills**
+- Functional & regression testing  
+- API testing (Postman + manual)  
+- UI automation (Playwright / Selenium)  
+- SQL for data validation  
+- Test planning & test case writing  
+- Defect reporting (JIRA-style)  
+- Agile / Scrum  
+- Risk-based testing  
 
-API testing (Postman + manual)
+### **Tools & Technologies**
+- Postman  
+- Playwright / Selenium  
+- JavaScript or Python basics  
+- Git & GitHub  
+- Figma (UI/UX understanding)  
 
-UI automation (Playwright / Selenium)
+---
 
-SQL for data validation
+## 📂 Portfolio Sections
 
-Test planning & test cases
+### **1️⃣ API Testing**  
+Examples of REST API testing using public APIs.  
+➡️ `/api-testing`
 
-Defect reporting (JIRA style)
+---
 
-Agile / Scrum
+### **2️⃣ UI Automation**  
+Playwright-based automation scripts demonstrating real interview tasks.  
+➡️ `/ui-automation`
 
-Risk-based testing
+---
 
-Tools
+### **3️⃣ SQL Queries**  
+Practical database queries used in QA testing.  
+➡️ `/sql`
 
-Postman
+---
 
-Playwright / Selenium
+### **4️⃣ Test Design**  
+Structured test cases, BVA/EP examples, and bug reports.  
+➡️ `/test-design`
 
-JavaScript or Python basics
+---
 
-Git & GitHub
+### **5️⃣ Postman Collections**  
+Exported Postman collections + screenshots + test scripts.  
+➡️ `/postman-collections`
 
-Figma (bonus: UI/UX understanding)
+---
 
-📂 Portfolio Sections
-1️⃣ API Testing
+## 📫 Contact
 
-Examples of REST API testing using public APIs.
-➡️ /api-testing
+- **LinkedIn: https://www.linkedin.com/in/carmenfletcher/**  
+- **Portfolio website: https://carmenfletcher.my.canva.site/**  
 
-2️⃣ UI Automation
+---
 
-Playwright-based automation scripts demonstrating real interview tasks.
-➡️ /ui-automation
+## ✨ About This Portfolio
 
-3️⃣ SQL Queries
-
-Practical database queries used in QA testing.
-➡️ /sql
-
-4️⃣ Test Design
-
-Structured test cases, BVA/EP examples, and bug reports.
-➡️ /test-design
-
-5️⃣ Postman Collections
-
-Exported Postman collections + screenshots + scripts.
-➡️ /postman-collections
-
-📫 Contact
-
-LinkedIn: https://www.linkedin.com/in/carmenfletcher/
-
-Portfolio website: https://carmenfletcher.my.canva.site/
-
-✨ About This Portfolio
-
-This repository is designed to show practical QA skills in a way that hiring managers can understand instantly.
+This repository is designed to show practical QA skills in a way that hiring managers can understand instantly.  
 
 It includes real examples of the exact tasks typically required in QA interviews and technical assessments.
