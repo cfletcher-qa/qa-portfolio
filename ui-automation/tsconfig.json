@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    // Target modern JS features
+    "target": "ES6",
+    "module": "commonjs",
+    
+    // Node.js support
+    "lib": ["esnext"],
+    "types": ["node", "playwright"],
+    
+    // Directory structure (optional)
+    "rootDir": "./",
+    "outDir": "./dist",
+    
+    // Strict type checking
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    
+    // Module handling
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    
+    // Source maps
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    
+    // Style / safety
+    "skipLibCheck": true,
+    "isolatedModules": true
+  },
+  "include": ["tests/**/*.ts", "pages/**/*.ts"]
+}
