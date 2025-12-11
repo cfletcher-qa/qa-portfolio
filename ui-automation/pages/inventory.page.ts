@@ -19,12 +19,13 @@ return this.pageTitle.textContent();
 }
 
 async addItemToCart(itemName: string){
-    const selector = '[data-test="add-to-cart-${this.formatItemName(itemName)}"]';
+    const selector = `[data-test="add-to-cart-${this.formatItemName(itemName)}"]`;
+     console.log("Using selector:", selector); 
     await this.page.locator(selector).click();
 }
 
 async removeItemCart(itemName: string){
-    const selector = '[data-test="remove-${this.formatItemName(itemName)}"]';
+    const selector = `[data-test="remove-${this.formatItemName(itemName)}"]`;
     await this.page.locator(selector).click();
 }
 
