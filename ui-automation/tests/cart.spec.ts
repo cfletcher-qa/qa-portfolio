@@ -1,13 +1,6 @@
-import { test, expect } from '@playwright/test';
-import { LoginPage } from '../pages/login.page';
-import { InventoryPage } from '../pages/inventory.page';
-import { CartPage } from '../pages/cart.page';
+import { test, expect } from './fixtures';
 
-test('user can add item to cart and see it in cart page', async ({ page }) => {
-  const loginPage = new LoginPage(page);
-  const inventoryPage = new InventoryPage(page);
-  const cartPage = new CartPage(page);
-
+test('user can add item to cart and see it in cart page', async ({ loginPage, inventoryPage, cartPage }: { loginPage: any; inventoryPage: any; cartPage: any }) => {
   await loginPage.goto();
   await loginPage.login('standard_user', 'secret_sauce');
 
@@ -21,11 +14,7 @@ test('user can add item to cart and see it in cart page', async ({ page }) => {
   expect(items).toContain('Sauce Labs Backpack');
 });
 
-test('user can remove item from cart', async ({ page }) => {
-  const loginPage = new LoginPage(page);
-  const inventoryPage = new InventoryPage(page);
-  const cartPage = new CartPage(page);
-
+test('user can remove item from cart', async ({ loginPage, inventoryPage, cartPage }: { loginPage: any; inventoryPage: any; cartPage: any }) => {
   await loginPage.goto();
   await loginPage.login('standard_user', 'secret_sauce');
 
@@ -36,4 +25,3 @@ test('user can remove item from cart', async ({ page }) => {
   await cartPage.removeItem('Sauce Labs Backpack');
   expect(await cartPage.getItemCount()).toBe(0);
 });
-
