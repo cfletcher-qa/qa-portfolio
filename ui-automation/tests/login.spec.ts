@@ -1,9 +1,7 @@
-import { test, expect } from '@playwright/test';
-import { LoginPage } from '../pages/login.page';
+import { test, expect } from './fixtures';
 
 test.describe('Login Tests', () => {
-  test('Successful login', async ({ page }) => {
-    const loginPage = new LoginPage(page);
+  test('Successful login', async ({ loginPage, page }) => {
     await loginPage.goto();
     await loginPage.login('standard_user', 'secret_sauce');
 
@@ -12,8 +10,7 @@ test.describe('Login Tests', () => {
     await expect(title).toHaveText('Products');
   });
 
-  test('Failed login shows error message', async ({ page }) => {
-    const loginPage = new LoginPage(page);
+  test('Failed login shows error message', async ({ loginPage }) => {
     await loginPage.goto();
     await loginPage.login('invalid_user', 'wrong_password');
 
